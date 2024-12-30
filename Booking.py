@@ -2,57 +2,57 @@ import streamlit as st
 import pandas as pd
 import mysql.connector
 
-st.image("/Users/mohamedafrith/Downloads/rdc-redbus-logo.svg") #logo 
+st.image("/Users/muges/Downloads/rdc-redbus-logo.svg") #logo 
 state=st.selectbox("Select the State",('Andhra Pradesh','Assam','Bihar','Chandigarh','Himachal Pradesh','Kerala','Punjab','Telangana','Goa','West Bengal'),index=None) #all 10 states
 
 #reading the csv stored in the list
 list_apsrtc=[]
-df_apsrtc=pd.read_csv("/Users/mohamedafrith/Desktop/redbus_project/df_apsrtc.csv")
+df_apsrtc=pd.read_csv("/Users/muges/Desktop/redbus_project/df_apsrtc.csv")
 for i,r in df_apsrtc.iterrows():
     list_apsrtc.append(r["route_name"])
 
 list_astc=[]
-df_astc=pd.read_csv("/Users/mohamedafrith/Desktop/redbus_project/df_astc.csv")
+df_astc=pd.read_csv("/Users/muges/Desktop/redbus_project/df_astc.csv")
 for i,r in df_astc.iterrows():
     list_astc.append(r["route_name"])
 
 list_bsrtc=[]
-df_bsrtc=pd.read_csv("/Users/mohamedafrith/Desktop/redbus_project/df_bsrtc.csv")
+df_bsrtc=pd.read_csv("/Users/muges/Desktop/redbus_project/df_bsrtc.csv")
 for i,r in df_bsrtc.iterrows():
     list_bsrtc.append(r["route_name"])
 
 list_cturtc=[]
-df_cturtc=pd.read_csv("/Users/mohamedafrith/Desktop/redbus_project/df_cturtc.csv")
+df_cturtc=pd.read_csv("/Users/muges/Desktop/redbus_project/df_cturtc.csv")
 for i,r in df_cturtc.iterrows():
     list_cturtc.append(r["route_name"])
 
 list_hrtc=[]
-df_hrtc=pd.read_csv("/Users/mohamedafrith/Desktop/redbus_project/df_hrtc.csv")
+df_hrtc=pd.read_csv("/Users/muges/Desktop/redbus_project/df_hrtc.csv")
 for i,r in df_hrtc.iterrows():
     list_hrtc.append(r["route_name"])
 
 list_krtc=[]
-df_krtc=pd.read_csv("/Users/mohamedafrith/Desktop/redbus_project/df_krtc.csv")
+df_krtc=pd.read_csv("/Users/muges/Desktop/redbus_project/df_krtc.csv")
 for i,r in df_krtc.iterrows():
     list_krtc.append(r["route_name"])
 
 list_pepsu=[]
-df_pepsu=pd.read_csv("/Users/mohamedafrith/Desktop/redbus_project/df_pepsu.csv")
+df_pepsu=pd.read_csv("/Users/muges/Desktop/redbus_project/df_pepsu.csv")
 for i,r in df_pepsu.iterrows():
     list_pepsu.append(r["route_name"])
 
 list_tsrtc=[]
-df_tsrtc=pd.read_csv("/Users/mohamedafrith/Desktop/redbus_project/df_tsrtc.csv")
+df_tsrtc=pd.read_csv("/Users/muges/Desktop/redbus_project/df_tsrtc.csv")
 for i,r in df_tsrtc.iterrows():
     list_tsrtc.append(r["route_name"])
 
 list_ktcl=[]
-df_ktcl=pd.read_csv("/Users/mohamedafrith/Desktop/redbus_project/df_ktcl.csv")
+df_ktcl=pd.read_csv("/Users/muges/Desktop/redbus_project/df_ktcl.csv")
 for i,r in df_ktcl.iterrows():
     list_ktcl.append(r["route_name"])
 
 list_wbtc=[]
-df_wbtc=pd.read_csv("/Users/mohamedafrith/Desktop/redbus_project/df_wbtc.csv")
+df_wbtc=pd.read_csv("/Users/muges/Desktop/redbus_project/df_wbtc.csv")
 for i,r in df_wbtc.iterrows():
     list_wbtc.append(r["route_name"])
 
