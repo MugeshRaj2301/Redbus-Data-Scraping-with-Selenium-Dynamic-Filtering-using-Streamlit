@@ -73,7 +73,7 @@ for page_number in range(1, 6):
 Save the scraped data for APSRTC into a CSV file:
 
 df_apsrtc = pd.DataFrame({'route_name': Route_name, 'route_link': Route_link})
-directory = "/Users/mohamedafrith/Desktop/redbus_project"
+directory = "/Users/muges/Desktop/redbus_project"
 filename = "df_apsrtc.csv"
 path = f'{directory}/{filename}'
 df_apsrtc.to_csv(path, index=False)
@@ -195,7 +195,7 @@ final_redbus_data = pd.concat(
     ]), ignore_index=True)
 
 # Save the final data
-dir = '/Users/mohamedafrith/Desktop/redbus_project'
+dir = '/Users/muges/Desktop/redbus_project'
 filename = 'final_redbus_data.csv'
 path = f'{dir}/{filename}'
 final_redbus_data.to_csv(path, index=False)
@@ -286,7 +286,7 @@ creation_of_table(cursor, table_name, table_column_declaration)
 5. Read CSV Data Using Pandas
 Use pd.read_csv() to load data from a CSV file into a DataFrame.
 Specify the file path to your CSV file.
-df = pd.read_csv('/Users/mohamedafrith/Desktop/redbus_project/final_redbus_data_2.csv')
+df = pd.read_csv('/Users/muges/Desktop/redbus_project/final_redbus_data_2.csv')
 6. Reconnect to the Database for Data Insertion
 Define database connection parameters in a dictionary (db_config).
 Reconnect to the database.
