@@ -25,22 +25,22 @@ The columns will be used to display images in a side-by-side arrangement.
 4. Display Image in Column 1
 
 #with col1:
-    st.image('/Users/mohamedafrith/Downloads/se.png', width=100)#
+    st.image('/Users/muges/Downloads/se.png', width=100)#
 Purpose:
 The with col1: block allows you to display content specifically in the first column (col1).
-st.image() is used to display an image. The image path provided ('/Users/mohamedafrith/Downloads/se.png') should point to a local image file on your system.
+st.image() is used to display an image. The image path provided ('/Users/muges/Downloads/se.png') should point to a local image file on your system.
 The width=100 argument scales the image to 100 pixels wide.
 5. Display Image in Column 2
 
 #with col2:
-    st.image('/Users/mohamedafrith/Downloads/db2.jpg.webp', width=100)#
+    st.image('/Users/muges/Downloads/db2.jpg.webp', width=100)#
 Purpose:
 This block does the same as the previous one but for the second column (col2).
 Another image is displayed with the st.image() function, and it is also scaled to a width of 100 pixels.
 6. Display Image in Column 3
 
 #with col3:
-    st.image('/Users/mohamedafrith/Downloads/logo.svg', width=150)#
+    st.image('/Users/muges/Downloads/logo.svg', width=150)#
 
 Similar to the previous columns, this block displays an image in the third column (col3).
 This image is scaled to a width of 150 pixels.
@@ -118,7 +118,7 @@ pandas: Used for reading and displaying the data in a tabular format.
 mysql.connector: Used to connect to a MySQL database to fetch bus data.
 
 Step 2: Displaying the Logo
-#st.image("/Users/mohamedafrith/Downloads/rdc-redbus-logo.svg") #logo#
+#st.image("/Users/muges/Downloads/rdc-redbus-logo.svg") #logo#
 
 Displays the logo of the app using an image file from your local system.
 
@@ -132,7 +132,7 @@ Step 4: Load Data from CSV Files
 The app reads CSV files containing bus route data for different states and stores them in lists for further use. Each list corresponds to a state, which will later be used to filter routes in the MySQL database.
 
 #list_apsrtc = []
-df_apsrtc = pd.read_csv("/Users/mohamedafrith/Desktop/redbus_project/df_apsrtc.csv")
+df_apsrtc = pd.read_csv("/Users/muges/Desktop/redbus_project/df_apsrtc.csv")
 for i, r in df_apsrtc.iterrows():
     list_apsrtc.append(r["route_name"])#
 
