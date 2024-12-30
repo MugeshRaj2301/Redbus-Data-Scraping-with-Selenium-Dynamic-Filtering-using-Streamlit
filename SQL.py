@@ -26,7 +26,7 @@ except Exception as e:
     print(str(e))
 
 
-df=pd.read_csv('/Users/mohamedafrith/Desktop/redbus_project/final_redbus_data_2.csv')
+df=pd.read_csv('/Users/muges/Desktop/redbus_project/final_redbus_data_2.csv')
 db_config = {
     'user': 'root',
     'password': '24434244342',
